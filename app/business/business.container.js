@@ -1,7 +1,7 @@
 'use strict';
 
 import userManager from './user.manager';
-
+import postManager from './post.manager';
 
 function getter(manager, request) {
   return function () {
@@ -11,4 +11,5 @@ function getter(manager, request) {
 
 export default {
     getUserManager: getter(userManager),
+    getPostManager: getter(postManager)
 };
